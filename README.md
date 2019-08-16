@@ -1,6 +1,6 @@
 # Heroic
 
-**TODO: Add description**
+An API client for interacting with the [Heroic TSDB](https://spotify.github.io/heroic/).
 
 ## Installation
 
@@ -18,4 +18,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/heroic](https://hexdocs.pm/heroic).
-
