@@ -21,14 +21,14 @@ defmodule Heroic do
   @doc """
   Query for the status of an instance.
   """
-  def status(), do: get("/status")
+  def status(), do: get!("/status")
 
   @doc """
   Used for writing data into heroic directly.
   """
   def write(data = %Heroic.MetricCollection{}, series = %Heroic.Series{}) do
     body = %{series: series, data: data} |> Poison.encode!
-    post("/write", body, @headers)
+    post!("/write", body, @headers)
   end
 
   @doc """
@@ -41,6 +41,6 @@ defmodule Heroic do
       aggregation: aggregation,
       groupBy: group_by
     } |> Poison.encode!
-    post("/query/metrics", body, @headers)
+    post!("/query/metrics", body, @headers)
   end
 end
