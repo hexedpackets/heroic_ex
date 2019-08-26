@@ -18,3 +18,11 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/heroic](https://hexdocs.pm/heroic).
+
+## Configuration
+
+Add the Heroic endpoint to your mix configuration:
+
+```elixir
+config :heroic, :endpoint, "http://127.0.0.1:8080"
+```

@@ -16,7 +16,7 @@ defmodule Heroic do
     body |> Poison.decode!
   end
 
-  def endpoint(), do: "http://localhost:8080"
+  def endpoint(), do: Application.get_env(:heroic, :endpoint, "http://localhost:8080")
 
   @doc """
   Query for the status of an instance.
